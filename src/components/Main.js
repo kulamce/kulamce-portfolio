@@ -105,21 +105,15 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Contact</h2>
-          
-          <form action="https://formspree.io/f/xqkwavqd" method="POST">
-            <label>Your email: <input type="email" name="_replyto" placeholder="Enter your email" required/></label>
-            <label>
-              Your message:
-              <textarea name="message" required></textarea>
-            </label>
-
-
-
-            <button type="submit">Send</button>
-          </form>
-
-
+          <h2 className="major">Kontakt</h2>
+            <form action="https://formspree.io/f/xqkwavqd" method="POST">
+              <label>E-mail:<input type="email" name="_replyto" placeholder="Wprowadź swój e-mail" required/></label>
+              <label>
+                Wiadomość:
+                <textarea name="message" required></textarea>
+              </label>
+              <button type="submit">Wyślij</button>
+            </form>
           <ul className="icons">
             <li>
               <a
