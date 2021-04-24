@@ -107,35 +107,27 @@ class Main extends React.Component {
         >
           <h2 className="major">Kontakt</h2>
             <form action="https://formspree.io/f/xqkwavqd" method="POST">
-              <label>E-mail:<input type="email" name="_replyto" placeholder="Wprowadź swój e-mail" required/></label>
+              <label>E-mail:<input type="email" name="_replyto" placeholder="Wprowadź swój e-mail" required style={{marginTop: 10 + 'px'}}/></label>
               <label>
                 Wiadomość:
-                <textarea name="message" required></textarea>
+                <textarea name="message" required style={{marginTop: 10 + 'px'}} ></textarea>
               </label>
               <button type="submit">Wyślij</button>
             </form>
           <ul className="icons">
             <li>
-              <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
-              >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
+              <a href="https://facebook.com/cezary.krawczyk.7" className="icon fa-facebook">
                 <span className="label">Facebook</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
+              <a href="https://instagram.com/cezvrx" className="icon fa-instagram">
                 <span className="label">Instagram</span>
               </a>
             </li>
             <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
+                href="https://github.com/kulamce/kulamce-portfolio"
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>
