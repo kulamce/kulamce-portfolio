@@ -106,28 +106,20 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="email" name="email" id="email" aria-label="email" placeholder="Email*" class="Input-sc-1wazakd-0 cARolR" error="Invalid email"/>
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" className="special" />
-              </li>
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
-            </ul>
+          
+          <form action="https://formspree.io/f/xqkwavqd" method="POST">
+            <label>Your email: <input type="email" name="_replyto" placeholder="Enter your email" required/></label>
+            <label>
+              Your message:
+              <textarea name="message" required></textarea>
+            </label>
+
+
+
+            <button type="submit">Send</button>
           </form>
+
+
           <ul className="icons">
             <li>
               <a
