@@ -11,7 +11,8 @@ class Main extends React.Component {
         className="close"
         onClick={() => {
           this.props.onCloseArticle()
-        }}
+        }} onKeyDown={this.handleClick }role="button"
+        tabIndex="0" aria-label="Save"
       ></div>
     )
 
