@@ -113,7 +113,7 @@ class Main extends React.Component {
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <input type="email" name="email" id="email" aria-label="email" placeholder="Email*" class="Input-sc-1wazakd-0 cARolR" error="Invalid email"/>
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
