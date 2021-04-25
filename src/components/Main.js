@@ -106,11 +106,19 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Kontakt</h2>
-            <form action="https://formspree.io/f/xqkwavqd" method="POST">
+            <form action="https://formspree.io/f/xqkwavqd" method="POST" enctype="multipart/form-data">
+            <label>
+                Imie:
+                <textarea type="message" name="name" required style={{marginTop: 10 + 'px', height: 55 + 'px', resize: 'none', width: 200 + 'px'}} ></textarea>
+              </label>
               <label>E-mail:<input type="email" name="_replyto" placeholder="Wprowadź swój e-mail" required style={{marginTop: 10 + 'px'}}/></label>
               <label>
                 Wiadomość:
-                <textarea name="message" required style={{marginTop: 10 + 'px'}} ></textarea>
+                <textarea name="message" required style={{marginTop: 10 + 'px', resize: 'none'}} ></textarea>
+              </label>
+              <label>
+                Your file:
+                <input type="file" name="attachment" accept="image/png, image/jpeg" />
               </label>
               <button type="submit">Wyślij</button>
             </form>
