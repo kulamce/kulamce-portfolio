@@ -86,8 +86,12 @@
 		}
 	}
 
-	.projects ul li {
+	.projects li {
 		padding-left: 2rem;
+	}
+
+	.projects ul {
+		padding-left: 0 !important;
 	}
 	.projects a {
 		border-bottom: none !important;
