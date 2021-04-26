@@ -43,7 +43,7 @@ class Main extends React.Component {
           poznawaniu nowych technologii, 
           dzięki którym moje projekty będą jeszcze lepsze.</p>
           <p>Aktualnie staram się o pracę jako Front-End Developer.</p>
-          <p>Pasjonuje się modą i uwielbiam żartować, poznawać nowych ludzi, realizować muzyczne pasje, a w wolnej chwili pić kraftowe piwo.</p>
+          <p>Pasjonuję się modą i uwielbiam żartować, poznawać nowych ludzi, realizować muzyczne pasje, a w wolnej chwili pić kraftowe piwo.</p>
           {close}
         </article>
 
