@@ -37,26 +37,14 @@ class Main extends React.Component {
             WITAM KURWA JEGO MAC!
           </p>
           <p>
-             <ul className="icons">
-            <li>
-              <a className="icon fab fa-sass">
-                <span className="label">SASS</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com/cezvrx" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/kulamce/kulamce-portfolio"
-                className="icon fa-github"
-              >
-                <span className="label">GitHub</span>
-              </a>
-            </li>
-          </ul>
+					 <ul className="technologies">
+							<li>
+							  <i class="fab fa-sass"></i>
+							  </a>
+							</li>
+							
+				  
+				  </ul>
           </p>
           {close}
         </article>
