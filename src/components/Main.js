@@ -23,62 +23,6 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Intro</h2>
-          <span className="image main">
-            <img src={pic01} alt="" />
-          </span>
-          <p>
-            WITAM KURWA JEGO MAC!
-          </p>
-          <p>
-					 <ul className="technologies">
-							<li>
-							  <i class="fab fa-sass"></i>
-							  </a>
-							</li>
-							
-				  
-				  </ul>
-          </p>
-          {close}
-        </article>
-
-        <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
-          }`}
-          style={{ display: 'none' }}
-        >
-          <h2 className="major">Work</h2>
-          <span className="image main">
-            <img src={pic02} alt="" />
-          </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
-          {close}
-        </article>
-
-        <article
           id="about"
           className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
@@ -87,13 +31,85 @@ class Main extends React.Component {
         >
           <h2 className="major">About</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={pic02} alt="" />
           </span>
           <p>
-            Czy cie nie pojebalo przypadkiem mordko?
-          </p>
+          Nazywam się Cezary Krawczyk i od 2 lat fascynuję się i zajmuję kodowaniem stron internetowych.
+          <br/>Jestem absolwentem studiów I stopnia kierunku Informatyka na Wydziale Nauk Technicznych 
+          w Wyższej Szkoły Przedsiębiorczości i Administracji w Lublinie.</p> 
+          <p>Obecnie mieszkam w Lublinie, a całą swoją uwagę koncentruję na rozwijaniu umiejętności oraz 
+          poznawaniu nowych technologii, 
+          dzięki którym moje projekty będą jeszcze lepsze.</p>
+          <p>Aktualnie staram się o pracę jako Front-End Developer.</p>
+          <p>Pasjonuje się modą i uwielbiam żartować, poznawać nowych ludzi, realizować muzyczne pasje, a w wolnej chwili pić kraftowe piwo.</p>
           {close}
         </article>
+
+        
+
+        <article
+          id="work"
+          className={`${this.props.article === 'work' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Umiejętności</h2>
+          <span className="image main">
+            <img src={pic01} alt="" />
+          </span>
+          <p style={{textAlign: 'center', fontSize: 1.4+'rem'}}>
+            Technologie, których używam:
+          </p>
+          <div style={{fontSize: '0.8rem'}}>
+          <ul className="icons" style={{display: 'flex', justifyContent: 'space-evenly'}}>
+              <li>
+                <i class="fab fa-sass fa-6x"/>
+              </li>
+              <li>
+              <i class="fab fa-react fa-6x"/>
+              </li>
+              <li>
+              <i class="fab fa-html5 fa-6x"/>
+              </li>
+              <li>
+              <i class="fab fa-css3-alt fa-6x"/>
+              </li>
+          </ul>
+          <ul className="icons" style={{display: 'flex', justifyContent: 'space-evenly'}}>
+              <li>
+              <i class="fab fa-js fa-6x"/>
+              </li>
+              <li>
+              <i class="fab fa-bootstrap fa-6x"/>
+              </li>
+              <li>
+              <i class="fab fa-node fa-6x"/>
+              </li>
+              <li>
+              <i class="fas fa-database fa-6x"><p className="textUnderIcon">MySQL</p></i>
+              </li>
+          </ul>
+          </div>	 
+          {close}
+        </article>
+
+        <article
+          id="intro"
+          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Intro</h2>
+          <span className="image main">
+            <img src={pic03} alt="" />
+          </span>
+         
+
+          {close}
+        </article>
+
 
         <article
           id="contact"

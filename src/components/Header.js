@@ -10,7 +10,7 @@ const Header = props => (
       <div className="inner">
         <h1>Cezary Krawczyk</h1>
         <p>
-          Przyszły frontend developer - zapraszam do zapoznania się ze stroną
+          Front-end Developer
         </p>
       </div>
     </div>
@@ -19,10 +19,10 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('intro')
+              props.onOpenArticle('about')
             }}
           >
-            Wstęp
+            O mnie
           </button>
         </li>
         <li>
@@ -31,16 +31,16 @@ const Header = props => (
               props.onOpenArticle('work')
             }}
           >
-            Praca
+          Umiejętności
           </button>
         </li>
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('intro')
             }}
           >
-            O mnie
+            Portfolio
           </button>
         </li>
         <li>

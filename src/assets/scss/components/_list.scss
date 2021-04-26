@@ -40,6 +40,7 @@
 			}
 		}
 
+
 		&.icons {
 			cursor: default;
 			list-style: none;
@@ -195,4 +196,12 @@
 		dd {
 			margin-left: _size(element-margin);
 		}
+	}
+
+	.textUnderIcon {
+		font-weight: 400;
+		font-size: 20px;
+		text-align: center;
+		margin: 6px 0px 0px 2px;
+		
 	}
