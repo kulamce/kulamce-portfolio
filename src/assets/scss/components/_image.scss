@@ -86,22 +86,32 @@
 		}
 	}
 
+	.projects ul li {
+		padding-left: 2rem;
+	}
 	.projects a {
 		border-bottom: none !important;
 	}
 
-	.projects figcaption {
-		font-size: 18px;
-		font-style: italic;
+	.projects figure {
+		display: table;
+		margin-right: -15px;
+		margin-left: -15px;
+	  }
+	  
+	  
+	  .projects figcaption {
+		display: table-caption;
+		caption-side: bottom;
+		margin: 5px 15px 0px 0px;
 		text-align: center;
-	}
+	  }
 	.projects img {
-		width: 70%;
-		height: 70%;
+		max-width: 90%;
+		height: auto;
+		display: block;
 		transition: 0.4s ease-in-out;
-		transform:translate(0%);
-		margin-left: 32px;
-		
+
 	
 			&:hover
 			{
