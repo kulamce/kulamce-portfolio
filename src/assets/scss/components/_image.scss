@@ -85,3 +85,30 @@
 			}
 		}
 	}
+
+	.projects a {
+		border-bottom: none !important;
+	}
+
+	.projects figcaption {
+		font-size: 18px;
+		font-style: italic;
+		text-align: center;
+	}
+	.projects img {
+		width: 70%;
+		height: 70%;
+		transition: 0.4s ease-in-out;
+		transform:translate(0%);
+		margin-left: 38px;
+		
+	
+			&:hover
+			{
+				transform: scale(1.7);
+				transition-duration: 0.4s;
+
+			}
+
+		}
+		

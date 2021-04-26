@@ -3,6 +3,8 @@ import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
+import pic04 from '../images/pic04.png'
+import pic05   from '../images/pic05.png'
 
 class Main extends React.Component {
   render() {
@@ -58,36 +60,36 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
-          <p style={{textAlign: 'center', fontSize: 1.4+'rem'}}>
+          <p style={{textAlign: 'center', fontSize: 1.6+'rem'}}>
             Technologie, których używam:
           </p>
           <div style={{fontSize: '0.8rem'}}>
           <ul className="icons" style={{display: 'flex', justifyContent: 'space-evenly'}}>
               <li>
-                <i class="fab fa-sass fa-6x"/>
+                <i className="fab fa-sass fa-6x"/>
               </li>
               <li>
-              <i class="fab fa-react fa-6x"/>
+              <i className="fab fa-react fa-6x"/>
               </li>
               <li>
-              <i class="fab fa-html5 fa-6x"/>
+              <i className="fab fa-html5 fa-6x"/>
               </li>
               <li>
-              <i class="fab fa-css3-alt fa-6x"/>
+              <i className="fab fa-css3-alt fa-6x"/>
               </li>
           </ul>
           <ul className="icons" style={{display: 'flex', justifyContent: 'space-evenly'}}>
               <li>
-              <i class="fab fa-js fa-6x"/>
+              <i className="fab fa-js fa-6x"/>
               </li>
               <li>
-              <i class="fab fa-bootstrap fa-6x"/>
+              <i className="fab fa-bootstrap fa-6x"/>
               </li>
               <li>
-              <i class="fab fa-node fa-6x"/>
+              <i className="fab fa-node fa-6x"/>
               </li>
               <li>
-              <i class="fas fa-database fa-6x"><p className="textUnderIcon">MySQL</p></i>
+              <i className="fas fa-database fa-6x"><p className="textUnderIcon">MySQL</p></i>
               </li>
           </ul>
           </div>	 
@@ -105,7 +107,26 @@ class Main extends React.Component {
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
-          <p style={{textAlign:'center'}}>W BUDOWIE! PRZEPRASZAM</p>
+          <p style={{textAlign:'center', fontSize: 1.6+ 'rem'}}>Moje projekty:</p>
+          <div className="projects">
+            <ul style={{display: 'flex', listStyleType: 'none'}}>
+              
+              <li>
+                  <figure>
+                  <a href="https://zielonezacisze-janowlub.pl" aria-label="link do projektu"><img src={pic04} alt=""/></a>
+                  <figcaption>Strona Agroturystyki</figcaption>
+                  </figure>
+              </li>
+              
+              
+              <li>
+                  <figure>
+                  <a href="https://heuristic-bhabha-791098.netlify.app" aria-label="link do projektu"><img src={pic05} alt=""/></a>
+                  <figcaption>Mini Heroes</figcaption>
+                  </figure>
+              </li>
+            </ul>
+          </div>
          
 
           {close}
@@ -120,7 +141,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Kontakt</h2>
-            <form action="https://formspree.io/f/xqkwavqd" method="POST" enctype="multipart/form-data">
+            <form action="https://formspree.io/f/xqkwavqd" method="POST" encType="multipart/form-data">
             <label>
                 Imie:
                 <textarea type="message" name="name" required style={{marginTop: 10 + 'px', height: 55 + 'px', resize: 'none', width: 200 + 'px'}} ></textarea>
