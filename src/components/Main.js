@@ -141,7 +141,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Kontakt</h2>
-          <form name="Formularz Kontaktowy" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
   <input type="hidden" name="bot-field" />
   <input type="hidden" name="form-name" value="contact" />
   <div className="field half first">
