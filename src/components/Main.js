@@ -141,22 +141,30 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Kontakt</h2>
-            <form action="https://formspree.io/f/xqkwavqd" method="POST" encType="multipart/form-data">
-            <label>
-                Imie:
-                <textarea type="message" name="name" required style={{marginTop: 10 + 'px', height: 55 + 'px', resize: 'none', width: 200 + 'px'}} ></textarea>
-              </label>
-              <label>E-mail:<input type="email" name="_replyto" placeholder="Wprowadź swój e-mail" required style={{marginTop: 10 + 'px'}}/></label>
-              <label>
-                Wiadomość:
-                <textarea name="message" required style={{marginTop: 10 + 'px', resize: 'none'}} ></textarea>
-              </label>
-              <label>
-                Your file:
-                <input type="file" name="attachment" accept="image/png, image/jpeg" />
-              </label>
-              <button type="submit">Wyślij</button>
-            </form>
+          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+  <input type="hidden" name="bot-field" />
+  <input type="hidden" name="form-name" value="contact" />
+  <div className="field half first">
+    <label htmlFor="name">Name</label>
+    <input type="text" name="name" id="name" />
+  </div>
+  <div className="field half">
+    <label htmlFor="email">Email</label>
+    <input type="text" name="email" id="email" />
+  </div>
+  <div className="field">
+    <label htmlFor="message">Message</label>
+    <textarea name="message" id="message" rows="6" />
+  </div>
+  <ul className="actions">
+    <li>
+      <input type="submit" value="Send Message" className="special" />
+    </li>
+    <li>
+      <input type="reset" value="Clear" />
+    </li>
+  </ul>
+</form>
           <ul className="icons">
             <li>
               <a href="https://facebook.com/cezary.krawczyk.7" className="icon fa-facebook">
