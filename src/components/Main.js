@@ -143,7 +143,7 @@ class Main extends React.Component {
           <h2 className="major">Kontakt</h2>
             <form action="https://formspree.io/f/xqkwavqd" method="POST" encType="multipart/form-data">
             <label>
-                Imie:
+                Imię:
                 <textarea type="message" name="name" required style={{marginTop: 10 + 'px', height: 55 + 'px', resize: 'none', width: 200 + 'px'}} ></textarea>
               </label>
               <label>E-mail:<input type="email" name="_replyto" placeholder="Wprowadź swój e-mail" required style={{marginTop: 10 + 'px'}}/></label>
