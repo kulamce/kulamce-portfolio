@@ -141,30 +141,26 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Kontakt</h2>
-          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-  <input type="hidden" name="bot-field" />
-  <input type="hidden" name="form-name" value="contact" />
-  <div className="field half first">
-    <label htmlFor="name">Imię</label>
-    <input type="text" name="name" id="name" />
-  </div>
-  <div className="field half">
-    <label htmlFor="email">E-mail</label>
-    <input type="text" name="email" id="email" />
-  </div>
-  <div className="field">
-    <label htmlFor="message">Wiadomość</label>
-    <textarea name="message" id="message" rows="6" />
-  </div>
-  <ul className="actions">
-    <li>
-      <input type="submit" value="Send Message" className="special" />
-    </li>
-    <li>
-      <input type="reset" value="Clear" />
-    </li>
-  </ul>
-</form>
+                      <form name="contact" method="POST" data-netlify="true" action="/thank-you.js">
+                    <p>
+                      <label>Your Name: <input type="text" name="name" /></label>   
+                    </p>
+                    <p>
+                      <label>Your Email: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                      <label>Your Role: <select name="role[]" multiple>
+                        <option value="leader">Leader</option>
+                        <option value="follower">Follower</option>
+                      </select></label>
+                    </p>
+                    <p>
+                      <label>Message: <textarea name="message"></textarea></label>
+                    </p>
+                    <p>
+                      <button type="submit">Send</button>
+                    </p>
+                  </form>
           <ul className="icons">
             <li>
               <a href="https://facebook.com/cezary.krawczyk.7" className="icon fa-facebook">
